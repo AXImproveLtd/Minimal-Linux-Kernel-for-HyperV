@@ -1,5 +1,5 @@
 # Minimal-Linux-Kernel-for-HyperV
-The config file allowing to build custom, minimalist linux kernel for use as a guest os in AMD-based Hyper-V server.
+The config file allowing to build custom, minimalist linux kernel for use as a Gen2 guest os in AMD-based Hyper-V server.
 
 It is enough to run Debian 9 with PHP, Nginx and MariaDB
 
@@ -7,11 +7,13 @@ It is enough to run Debian 9 with PHP, Nginx and MariaDB
 
 -x64, SMP
 
--AMD (Opteron) ONLY
+-AMD cpu (Opteron) ONLY
+
+-ACPI
 
 -console, text mode only
 
--drivers for Hyper-V (disk, network, etc)
+-drivers for Hyper-V syntetic devices (disk, network, etc)
 
 -EXT3+4
 
@@ -21,7 +23,7 @@ It is enough to run Debian 9 with PHP, Nginx and MariaDB
 
 
 # Not included
--Intel
+-Intel cpu
 
 -GUI
 
